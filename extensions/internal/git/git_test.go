@@ -6,10 +6,10 @@ import (
 	"testing"
 
 	_ "github.com/mattn/go-sqlite3"
-	"github.com/mergestat/mergestat-lite/extensions"
-	"github.com/mergestat/mergestat-lite/extensions/options"
-	"github.com/mergestat/mergestat-lite/pkg/locator"
-	_ "github.com/mergestat/mergestat-lite/pkg/sqlite"
+	"github.com/ngodn/codereport-cli/extensions"
+	"github.com/ngodn/codereport-cli/extensions/options"
+	"github.com/ngodn/codereport-cli/pkg/locator"
+	_ "github.com/ngodn/codereport-cli/pkg/sqlite"
 	"go.riyazali.net/sqlite"
 )
 

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/mergestat/mergestat-lite/cmd"
+	"github.com/ngodn/codereport-cli/cmd"
 )
 
 func main() {

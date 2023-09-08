@@ -8,8 +8,8 @@ RUN make
 FROM debian:buster-slim
 WORKDIR /app/
 RUN mkdir /repo
-COPY --from=builder /app/.build/mergestat .
+COPY --from=builder /app/.build/codereport .
 
 RUN apt-get update && apt-get install -y git
 
-ENTRYPOINT ["./mergestat", "--repo", "/repo"]
+ENTRYPOINT ["./codereport", "--repo", "/repo"]

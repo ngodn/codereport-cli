@@ -6,7 +6,7 @@ import (
 	"database/sql"
 
 	_ "github.com/mattn/go-sqlite3"
-	_ "github.com/mergestat/mergestat-lite/pkg/sqlite"
+	_ "github.com/ngodn/codereport-cli/pkg/sqlite"
 )
 
 func RowContent(rows *sql.Rows) (colCount int, contents [][]string, err error) {

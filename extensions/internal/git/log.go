@@ -8,8 +8,8 @@ import (
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/go-git/go-git/v5/plumbing/object"
 	"github.com/go-git/go-git/v5/plumbing/storer"
-	"github.com/mergestat/mergestat-lite/extensions/internal/git/utils"
-	"github.com/mergestat/mergestat-lite/pkg/mailmap"
+	"github.com/ngodn/codereport-cli/extensions/internal/git/utils"
+	"github.com/ngodn/codereport-cli/pkg/mailmap"
 	"github.com/pkg/errors"
 	"go.riyazali.net/sqlite"
 )

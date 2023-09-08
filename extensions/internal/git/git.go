@@ -1,9 +1,9 @@
 package git
 
 import (
-	"github.com/mergestat/mergestat-lite/extensions/internal/git/native"
-	"github.com/mergestat/mergestat-lite/extensions/internal/git/utils"
-	"github.com/mergestat/mergestat-lite/extensions/options"
+	"github.com/ngodn/codereport-cli/extensions/internal/git/native"
+	"github.com/ngodn/codereport-cli/extensions/internal/git/utils"
+	"github.com/ngodn/codereport-cli/extensions/options"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	"go.riyazali.net/sqlite"

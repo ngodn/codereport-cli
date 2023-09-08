@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mergestat/mergestat-lite/extensions/options"
+	"github.com/ngodn/codereport-cli/extensions/options"
 	"github.com/shurcooL/githubv4"
 	"go.riyazali.net/sqlite"
 )

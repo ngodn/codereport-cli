@@ -1,7 +1,7 @@
 .PHONY: clean update vet test lint lint-ci test-cover bench
 
 # default task invoked while running make
-all: clean .build/libmergestat.so .build/mergestat
+all: clean .build/codereport.so .build/codereport
 
 # pass these flags to linker to suppress missing symbol errors in intermediate artifacts
 export CGO_CFLAGS = -DUSE_LIBSQLITE3
@@ -16,15 +16,15 @@ libgit2:
 	cd git2go; make install-static
 
 # target to build a dynamic extension that can be loaded at runtime
-.build/libmergestat.so: $(shell find . -type f -name '*.go' -o -name '*.c')
+.build/codereport.so: $(shell find . -type f -name '*.go' -o -name '*.c')
 	$(call log, $(CYAN), "building $@")
 	@go build -buildmode=c-shared -o $@ -tags="static,shared" shared.go
 	$(call log, $(GREEN), "built $@")
 
-# target to compile mergestat executable
-.build/mergestat: $(shell find . -type f -name '*.go' -o -name '*.c')
+# target to compile codereport executable
+.build/codereport: $(shell find . -type f -name '*.go' -o -name '*.c')
 	$(call log, $(CYAN), "building $@")
-	@go build -o $@ -tags="static" mergestat.go
+	@go build -o $@ -tags="static" codereport.go
 	$(call log, $(GREEN), "built $@")
 
 # target to download latest sqlite3 amalgamation code
@@ -56,7 +56,7 @@ vet:
 	go vet -v -tags=$(TAGS) ./...
 
 build:
-	go build -v -tags=$(TAGS) mergestat.go
+	go build -v -tags=$(TAGS) codereport.go
 
 lint:
 	golangci-lint run --build-tags $(TAGS)

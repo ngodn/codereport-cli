@@ -7,7 +7,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/mergestat/mergestat-lite/pkg/display"
+	"github.com/ngodn/codereport-cli/pkg/display"
 	"github.com/spf13/cobra"
 )
 

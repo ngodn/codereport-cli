@@ -1,12 +1,12 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/mergestat/mergestat-lite.svg)](https://pkg.go.dev/github.com/mergestat/mergestat-lite)
-[![BuildStatus](https://github.com/mergestat/mergestat-lite/workflows/tests/badge.svg)](https://github.com/mergestat/mergestat-lite/actions?workflow=tests)
+[![BuildStatus](https://github.com/ngodn/codereport-cli/workflows/tests/badge.svg)](https://github.com/ngodn/codereport-cli/actions?workflow=tests)
 [![Go Report Card](https://goreportcard.com/badge/github.com/mergestat/mergestat-lite)](https://goreportcard.com/report/github.com/mergestat/mergestat-lite)
-[![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/mergestat/mergestat-lite/main)](https://www.tickgit.com/browse?repo=github.com/mergestat/mergestat-lite&branch=main)
-[![codecov](https://codecov.io/gh/mergestat/mergestat-lite/branch/main/graph/badge.svg)](https://codecov.io/gh/mergestat/mergestat-lite)
+[![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/ngodn/codereport-cli/main)](https://www.tickgit.com/browse?repo=github.com/mergestat/mergestat-lite&branch=main)
+[![codecov](https://codecov.io/gh/ngodn/codereport-cli/branch/main/graph/badge.svg)](https://codecov.io/gh/mergestat/mergestat-lite)
 [![Twitter Follow](https://img.shields.io/twitter/follow/mergestat)](https://twitter.com/mergestat)
 
 
-# mergestat-lite <a href="https://app.mergestat.com/"><img align="right" src="https://github.com/mergestat/mergestat-lite/raw/main/docs/logo.png" alt="MergeStat Logo" height="100"></a>
+# mergestat-lite <a href="https://app.mergestat.com/"><img align="right" src="https://github.com/ngodn/codereport-cli/raw/main/docs/logo.png" alt="MergeStat Logo" height="100"></a>
 
 `mergestat-lite` is a command-line tool for running SQL queries on git repositories and related data sources.
 It's meant for ad-hoc querying of source-code on disk through a common interface (SQL), as an alternative to patching together various shell commands.

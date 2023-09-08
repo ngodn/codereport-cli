@@ -1,4 +1,4 @@
-module github.com/mergestat/mergestat-lite
+module github.com/ngodn/codereport-cli
 
 go 1.19
 

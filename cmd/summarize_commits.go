@@ -5,7 +5,7 @@ import (
 	"os"
 
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/mergestat/mergestat-lite/cmd/summarize/commits"
+	"github.com/ngodn/codereport-cli/cmd/summarize/commits"
 	"github.com/spf13/cobra"
 )
 

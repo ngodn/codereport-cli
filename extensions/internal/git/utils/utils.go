@@ -3,7 +3,7 @@ package utils
 import (
 	"os"
 
-	"github.com/mergestat/mergestat-lite/extensions/services"
+	"github.com/ngodn/codereport-cli/extensions/services"
 	"github.com/rs/zerolog"
 )
 

@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mergestat/mergestat-lite/extensions/internal/tools"
+	"github.com/ngodn/codereport-cli/extensions/internal/tools"
 )
 
 func TestGrepSimple(t *testing.T) {

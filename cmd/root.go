@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/mergestat/mergestat-lite/pkg/display"
-	. "github.com/mergestat/mergestat-lite/pkg/query"
+	"github.com/ngodn/codereport-cli/pkg/display"
+	. "github.com/ngodn/codereport-cli/pkg/query"
 	"github.com/rs/zerolog"
 	"github.com/spf13/cobra"
 )
@@ -82,10 +82,9 @@ func handleExitError(err error) {
 }
 
 var rootCmd = &cobra.Command{
-	Use:  `mergestat "SELECT * FROM commits"`,
-	Args: cobra.MaximumNArgs(2),
-	Long: `mergestat is a CLI for querying git repositories with SQL, using SQLite virtual tables.
-Example queries can be found in the GitHub repo: https://github.com/mergestat/mergestat`,
+	Use:   `codereport "SELECT * FROM commits"`,
+	Args:  cobra.MaximumNArgs(2),
+	Long:  `codereport is a CLI for querying git repositories with SQL, using SQLite virtual tables.`,
 	Short: `Query git repositories with SQL`,
 	Run: func(cmd *cobra.Command, args []string) {
 		var err error
